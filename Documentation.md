@@ -2,6 +2,9 @@ Grace Bodur
 Ieva Urbaite
 Alvin Pierre-Louis
 
+# Link to thingful-client:
+# https://github.com/gracebodur/thingful-client.git
+
 # Basic Questions
 
 ## 1. What the project does
