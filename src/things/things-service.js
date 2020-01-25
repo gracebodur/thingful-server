@@ -62,7 +62,9 @@ const ThingsService = {
   },
 
   serializeThing(thing) {
+    console.log(Treeize)
     const thingTree = new Treeize()
+    console.log(Treeize)
 
     // Some light hackiness to allow for the fact that `treeize`
     // only accepts arrays of objects, and we want to use a single
