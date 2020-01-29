@@ -26,7 +26,7 @@ describe('Protected endpoints', function() {
   afterEach('cleanup', () => helpers.cleanTables(db))
 
   beforeEach('insert articles', () =>
-    helpers.seedArticlesTables(
+    helpers.seedThingsTables(
       db,
       testUsers,
       testThings,
