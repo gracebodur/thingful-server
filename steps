@@ -1,0 +1,24 @@
+1. import Token Service in Log in Form(client) x
+2. start application x
+    submit login form using username: dunder password:password ZHVuZGVyOnBhc3N3b3Jk
+3. Check the token in the applications tab of DevTools, clear ll
+4. refresh app and login again copy token from applications devtools
+5. thing-api-service- add authorization header to the enpoints that needed to be protected x
+6. make a new file and folder, 
+    mkdir ./src/middleware
+    touch ./src/middleware/basic-auth.js
+    (export a middleware function called requireAuth) x
+6.1 test x
+7.(thingful-client)
+8. make changes in the thingful-server: connect the 2 connected endpoints in the x
+9. (thingful client)
+10. update test protected endpoints middleware/basic-auth 
+
+
+
+
+
+
+
+
+
