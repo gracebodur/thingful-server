@@ -22,6 +22,7 @@ thingsRouter
     res.json(ThingsService.serializeThing(res.thing))
   })
 
+
 thingsRouter.route('/:thing_id/reviews/')
   .all(checkThingExists)
   .all(requireAuth)

@@ -31,7 +31,7 @@ const ThingsService = {
       )
       .groupBy('thg.id', 'usr.id')
   },
-
+  
   getById(db, id) {
     return ThingsService.getAllThings(db)
       .where('thg.id', id)
@@ -94,7 +94,7 @@ const ThingsService = {
     const reviewData = reviewTree.grow([ review ]).getData()[0]
 
     return {
-      id: reviewData.id,
+      review_id: reviewData.id,
       rating: reviewData.rating,
       thing_id: reviewData.thing_id,
       text: xss(reviewData.text),
@@ -103,7 +103,7 @@ const ThingsService = {
     }
   },
 }
-
+  
 const userFields = [
   'usr.id AS user:id',
   'usr.user_name AS user:user_name',
@@ -112,5 +112,7 @@ const userFields = [
   'usr.date_created AS user:date_created',
   'usr.date_modified AS user:date_modified',
 ]
+
+
 
 module.exports = ThingsService
